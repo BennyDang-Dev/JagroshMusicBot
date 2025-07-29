@@ -13,7 +13,7 @@
 ---
 
 ### Notes
-> **<p style="color:yellow;background-color:dark-grey">This is just a fork of the original MusicBot from Jagrosh for fixing some errors that has not been addressed yet</p>**
+> **<p style="color:yellow;background-color:dark-grey">This is just a fork of the original MusicBot from Jagrosh for fixing some errors that has not been addressed yet - for v4.3.0</p>**
 ---
 ### Patches
 #### Updated Lavaplayer to v2.2.4
@@ -48,6 +48,23 @@ $\longrightarrow$ ***Reason*** : [[SignatureCipherManager Error](https://github.
 </dependency>
 ```
 ---
-$\longrightarrow$ **Reason** : ***Missing Dependency*** :  [[Issue-1686](https://github.com/jagrosh/MusicBot/issues/1686)]
+$\longrightarrow$ **Reason** : ***Missing Dependency*** : [[Issue-1686](https://github.com/jagrosh/MusicBot/issues/1686)]
 
 ---
+
+### Compiling
+- Generally you will need to have maven installed as this is a maven project
+- **[ And Java as well of course ]**
+---
+> <!> **An IDE should be able to automatically do this**<br>
+> <!> But if you intend on compiling from CLI, this is what I did
+---
+- To compile via CLI
+```
+mvn clean install
+```
+- This will put the compiled project in the target directory
+- Choose the jar file : **`JMusicBot-Snapshot-All.jar`** **[ in the target directory ]**
+<br> $\longrightarrow$ Use this to run the bot
+---
+- More info on Maven Compilation : [[StackOverflow](https://stackoverflow.com/questions/38315279/how-to-compile-maven-project-from-command-line-with-all-dependencies)]
